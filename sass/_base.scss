@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+img,
+ion-icon,
+button,
+a {
+    display: block;
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-family: 'Scope One', serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.65;
+    background-color: $white;
+    color: $body-font-color;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background);
+    border-left: 1px solid var(--primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid var(--background);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}

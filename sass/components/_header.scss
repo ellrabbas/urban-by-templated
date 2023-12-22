@@ -1,0 +1,97 @@
+header {
+    width: 100%;
+    height: 100vh;
+
+    .banner {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block-start: $nav-padding-top;
+        padding-inline: $nav-padding-x;
+        position: fixed;
+        background-color: transparent;
+        overflow: hidden;
+        height: 3.25em;
+        line-height: 3.25em;
+        left: 0;
+        z-index: 150;
+
+        .logo {
+
+            a {
+                color: $info;
+                font-size: $fs-logo;
+
+                span {
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+        }
+
+        .menu {
+
+            color: $white;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: $info;
+                cursor: pointer;
+            }
+        }
+    }
+
+    section {
+
+        display: flex;
+        justify-content: center;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: $black;
+            opacity: 0.6;
+        }
+
+        .inner {
+            width: 60%;
+            position: absolute;
+            z-index: 200;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: $fs-banner-title;
+                color: $white;
+            }
+
+            p {
+                font-size: $fs-desc;
+                color: $white;
+                opacity: 0.8;
+                margin-block-start: 0.5em;
+                line-height: 80%;
+            }
+
+            button {
+                @extend .big-btn;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.big-btn {
+    display: inline-block;
+    font-size: $fs-big-btn;
+    background-color: $info;
+    color: $white;
+    transition: all ease-in-out 0.2s;
+    border: 0;
+    font-weight: 700;
+    line-height: 2.85em;
+    padding-inline: $big-btn-padding-x;
+    margin-block-start: 3em;
+    border-radius: 4px;
+    text-align: center;
+
+    &:hover {
+        background-color: #57ade7;
+    }
+}
